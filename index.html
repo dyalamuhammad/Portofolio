@@ -1,188 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dyala Muhammad</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="DMP (1).png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  </head>
-  <style></style>
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<style></style>
 
-  <body>
+<body>
     <!-- navbar start -->
-    <div class="hero">
-      <div class="navbar">
-        <h2><a href="#" class="title-navbar animate__animated animate__fadeInLeft">Dyala Muhammad</a></h2>
-        <ul class="animate__animated animate__fadeInRight">
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#contact">About</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-          <!-- <li><a href="#contact">Education</a></li>
-          <li><a href="#contact">Experience</a></li>
-          <li><a href="#contact">Projects</a></li> -->
-        </ul>
-      </div>
-      <div class="sidebar " id="sideBar">
-        <ul>
-          <li onclick="scrollSkill()"><a href="#skill">Skill</a></li>
-          <li onclick="scrollContact()"><a href="#contact">About</a></li>
-          <li onclick="scrollContact()"><a href="#contact">Contact Me</a></li>
-          <!-- <li onclick="scrollDown()"><a href="#contact">Education</a></li>
-          <li onclick="scrollDown()"><a href="#contact">Experience</a></li>
-          <li onclick="scrollDown()"><a href="#contact">Projects</a></li> -->
-        </ul>
-      </div>
-      <div class="navbar-mobile">
-        <h2 class="title-sidebar"><a href="#">Dyala Muhammad</a></h2>
-        <i class="bx bx-menu garis3" onclick="toogleMenu()"></i>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dyala Muhammad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
     <!-- navbar end -->
 
-    <!-- hero start -->
-    <div class="content">
-      <div class="txt-content">
-        <h1>HEY, I'M <strong>DYALA MUHAMMAD PANAHPERTAMA</strong></h1>
-        <h1>YOU CAN CALL ME <b>DYALA</b></h1>
-        <h2>
-          I'm a web developer and informatics student at <br />Universitas
-          Pembangunan Nasional Veteran Jakarta
-        </h2>
-        <img src="IMAGE/DSC01058.JPG" alt=""/>
-      </div>
-    </div>
-    <!-- hero end -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <!-- hero start -->
+                <div class="my-5 col-12">
+                    <div class="d-flex flex-column align-items-center">
+                        <h1 class="d-inline">HEY, I'M <strong>DYALA MUHAMMAD PANAHPERTAMA</strong>
+                            <div class="d-inline d-xl-block text-xl-center">YOU CAN CALL ME <b>DYALA</b></div>
+                        </h1>
+                        <p>
+                            I'm a web developer and informatics student at Universitas Pembangunan Nasional Veteran Jakarta
+                        </p>
+                        <img src="IMAGE/DSC01058.JPG" alt="" class="rounded-circle col-6 col-lg-3" />
+                    </div>
+                </div>
+                <!-- hero end -->
 
-    <!-- content my skill start -->
-    <div class="content-skill" id="skill">
-      <div class="txt-skill">
-        <h1>MY SKILL</h1>
-      </div>
-      <div class="content-skill-isian">
-        <div class="skill-html">
-          <div class="skill-html-img">
-            <img src="IMAGE/html.png" alt="" />
-            <h2>HTML</h2>
-          </div>
-          <h3>
-            Bahasa pemrograman HTML 5 saya pelajari sejak 1 tahun belakangan.
-            Sehingga untuk pembuatan html dalam web ini pun saya membuatnya
-            sendiri.
-          </h3>
-        </div>
-        <div class="skill-html">
-          <div class="skill-html-img">
-            <img src="IMAGE/css.png" alt="" />
-            <h2>CSS</h2>
-          </div>
-          <h3>
-            Bahasa pemrograman CSS 3 saya pelajari bersamaan dengan proses saya
-            belajar HTML 5. Jadi hasil dari styling yang ada di web ini juga saya
-            buat sendiri.
-          </h3>
-        </div>
-        <div class="skill-html">
-          <div class="skill-html-img">
-            <img src="IMAGE/js.png" alt="" />
-            <h2>JAVASCRIPT</h2>
-          </div>
-          <h3>
-            Bahasa pemrograman javascript saya pelajari sejak 4 bulan belakangan.
-            Jadi masih banyak yang harus saya pelajari.
-          </h3>
-        </div>
-        <div class="skill-html">
-          <div class="skill-html-img">
-            <img src="IMAGE/php.png" alt="" />
-            <h2>PHP</h2>
-          </div>
-          <h3>
-            Bahasa pemrograman PHP saya pelajari sejak 2 bulan belakangan.
-            Jadi masih banyak yang harus saya pelajari.
-          </h3>
-        </div>
+            </div>
+            <!-- about me start -->
+            <div class=" w-100 my-5 col-12" id="about">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="fw-bold">About Me</h1>
+                </div>
+                <div class="col-12">
+                    <p>
+                        Hello! I'm a penultimate-year informatics student at Universitas Pembangunan Nasional "Veteran" Jakarta, deeply passionate about full-stack and website development. For nearly eight months, I have been consistently expanding my knowledge and skills in
+                        web development, focusing particularly on Laravel engineering. I look forward to connecting with you! </p>
+                </div>
+            </div>
+            <!-- about me end -->
 
-      </div>
+            <!-- my experience start -->
+            <div class="col-12 my-5" id="experience">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="fw-bold">My Experience</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <div class="card border-dark bg-transparent">
+                            <div class="card-header d-flex gap-3 align-items-center">
+                                <img src="https://logos-world.net/wp-content/uploads/2021/08/Daihatsu-Emblem.png" alt="" height="50px">
+                                <div class="row">
+                                    <h5>PT Astra Daihatsu Motor </h5>
+                                    <h6 class="fw-light">Feb - June 2024</h6>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text">
+                                    As a full stack developer im made a website about continous improvement
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card border-dark bg-transparent">
+                            <div class="card-header d-flex gap-3 align-items-center">
+                                <img src="https://ninefoxlab.com/assets/images/NFL.png" alt="" height="50px">
+                                <div class="row">
+                                    <h5>Nine Fox Lab </h5>
+                                    <h6 class="fw-light">Nov 2023 - Feb 2024</h6>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+
+                                </div>
+                                As a full stack developer im made a website for the client thats company profile
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- my experience end -->
+
+            <!-- content my skill start -->
+            <div class="my-5 col-12" id="skill">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="fw-bold">My Project</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-dark bg-transparent mb-3">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4 class="align-middle">DALF Playstation</h4>
+                                <a>PHP</a>
+
+                            </div>
+                            <div class="card-body">
+
+                                <p>
+                                    DALF Playstation merupakan website bertemakan sewa playstation online dan penjualan beberapa aksesori. Dirancang untuk memberikan kemudahan dan kenyamanan bagi pengguna dalam menyewa playstation secara online dan menawarkan layanan purna jual seperti
+                                    pergantian atau perbaikan apabila terjadi kerusakan pada playstation yang disewa serta memberikan informasi mengenai spesifikasi playstation yang tersedia serta berbagai aksesorinya. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="https://bit.ly/DyalaaDALFPlaystation" target="_blank" class="nav-link">Visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-dark bg-transparent mb-3">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4>Qur'an</h4>
+                                <a>React Js</a>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Qur’an by DMP adalah sebuah situs website yang saya buat secara pribadi. Situs website ini menyajikan ayat-ayat suci Al-Qur’an beserta terjemahannya, dengan data yang saya peroleh melalui API dari equran.id. Tujuan pembuatan situs website ini awalnya
+                                    menjadi bahan latihan pribadi saya dalam pengembangan situs menggunakan framework React.JS. Meskipun demikian, saya juga berharap website ini dapat memberikan manfaat dan membantu kaum muslim yang ingin membaca ayat
+                                    suci Al-Qur’an melalui situs website. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="https://quran-by-dmp.vercel.app/" target="_blank" class="nav-link">Visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-dark bg-transparent mb-3">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4>DMP Store</h4>
+                                <a>PHP</a>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    DMP Store merupakan sebuah inovatif aplikasi e-commerce yang menyediakan pengalaman berbelanja online yang luar biasa. Dengan fokus pada kenyamanan, keamanan, dan beragam pilihan produk, DMP Store menjadi destinasi utama bagi semua kebutuhan belanja online
+                                    Anda. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="https://www.notion.so/Pengembangan-Web-E-Commerce-f3c2a666092e4715ba68378118c49333?pvs=4" target="_blank" class="nav-link">Visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-dark bg-transparent mb-3">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4>Coffee Pasta UI/UX Design</h4>
+                                <a>Figma</a>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Aplikasi Coffee Pasta merupakan aplikasi yang membantu pelanggan dalam pemesanan di kedai coffee pasta. Pelanggan tidak perlu ke kasir untuk melakukan pembayaran maupun memilih menu mana yang ingin dipesan cukup scan barcode yang ada di meja dan menentukan
+                                    menu apa yang ingin dipesan. Kemudian admin kami akan menerima notifikasi dan memberikan menunya kepada pelayan kami maka makanan akan diantar ke meja pelanggan. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="https://bit.ly/DyalaaCoffeePasta" target="_blank" class="nav-link">Visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-dark bg-transparent mb-3">
+                            <div class="card-header d-flex justify-content-between">
+                                <h4>Innovation & Knowledge Management System</h4>
+                                <a>Laravel</a>
+                            </div>
+                            <div class="card-body">
+                                <p>Sebuah aplikasi berbasis website yang kami buat untuk membantu karyawan dan manajemen dalam melakukan continous improvement pada perusahaan daihatsu. Aplikasi ini terdapat fitur seperti monitoring circle, absensi dan pengisian
+                                    notulen. Kemudian tempat dikumpulkan nya reporting untuk dapat memudahkan karyawan dalam mencari referensi. Aplikasi ini bertujuan untuk memudahkan manajemen dan karyawan sebagai user selama proses continous improvement
+                                    berlangsung.
+                                </p>
+                                <div class=" mb-0">
+                                </div>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="https://www.notion.so/Pengembangan-Web-INSIGNIA-663b31d6bc9b4efb8706da2b362a2211?pvs=4" target="_blank" class="nav-link">Visit</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content my skill end -->
+
+            <!-- contact start -->
+            <div class="col-12" id="contact">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="fw-bold">Contact Me</h1>
+                </div>
+                <div class="col-12 d-flex text-dark gap-3 justify-content-center ">
+                    <div class="card border-dark bg-transparent mb-3">
+                        <div class="card-body">
+                            <a href="https://instagram.com/dyalamuhammad" class="nav-link"><i class="bi bi-instagram me-2 fs-3 align-middle"></i>Instagram</a>
+                        </div>
+                    </div>
+                    <div class="card border-dark bg-transparent mb-3">
+                        <div class="card-body">
+                            <a href="https://wa.me/+628998043982" class="nav-link"><i class="bi bi-whatsapp me-2 fs-3 align-middle"></i
+            >WhatsApp</a> </div>
+                    </div>
+                    <div class="card border-dark bg-transparent mb-3">
+                        <div class="card-body">
+                            <a href="https://linkedin.com/in/dyalamuhammad" class="nav-link"><i class="bi bi-linkedin me-2 fs-3 align-middle"></i
+            >LinkedIn</a> </div>
+                    </div>
+                    <div class="card border-dark bg-transparent mb-3">
+                        <div class="card-body">
+                            <a href="mailto:dyalamuhammad@gmail.com" class="nav-link"><i class="bi bi-envelope me-2 fs-3 align-middle"></i
+            >Email</a> </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- contact end -->
+        </div>
     </div>
-    <!-- content my skill end -->
+
+
+
+    </div>
 
     <!-- footer start -->
-    <div class="footer" id="contact">
-      <!-- <div class="gua">
-        <img src="gua.png" alt="" > 
-    </div> -->
-      <div class="txt-content-2">
-        <h3>About Me :</h3>
-        <p>
-          My name is Dyala Muhammad Panahpertama and I am undergraduate
-          informatics student at Universitas Pembangunan Nasional Jakarta. I'm
-          currently in term 4. I have an interest in website development and
-          still learning about it.
-        </p>
-      </div>
-      <div class="txt-content-2-1">
-        <h3>Contact Me :</h3>
-        <div class="isian-contact">
-          <a href="https://instagram.com/dyalamuhammad"
-            ><i class="bx bxl-instagram icon-contact"></i
-          ></a>
-          <a href="https://wa.me/+628998043982"
-            ><i class="bx bxl-whatsapp icon-contact"></i
-          ></a>
-          <a href="https://linkedin.com/in/dyalamuhammad"
-            ><i class="bx bxl-linkedin icon-contact"></i
-          ></a>
+    <footer>
+        <div class="bg-dark bottom-0 text-light py-3 mt-5">
+            <p class="text-center my-auto">Created with 🫶🏻 By Dyala Muhammad</p>
         </div>
-      </div>
-      <div class="txt-content-2-2">
-        <p>dyalamuhammad@gmail.com</p>
-      </div>
-    </div>
+    </footer>
     <!-- footer end -->
 
     <script>
-      let sideBar = document.getElementById("sideBar");
-      let scroll = document.getElementById("scroll");
+        let sideBar = document.getElementById("sideBar");
+        let scroll = document.getElementById("scroll");
 
-      function scrollSkill() {
-        window.location.replace("#skill");
-        sideBar.classList.toggle("open-side");
-      }
-      function scrollContact() {
-        window.location.replace("#contact");
-        sideBar.classList.toggle("open-side");
-      }
+        function scrollSkill() {
+            window.location.replace("#skill");
+            sideBar.classList.toggle("open-side");
+        }
 
-      function toogleMenu() {
-        sideBar.classList.toggle("open-side");
-      }
+        function scrollContact() {
+            window.location.replace("#contact");
+            sideBar.classList.toggle("open-side");
+        }
+
+        function toogleMenu() {
+            sideBar.classList.toggle("open-side");
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
 </html>

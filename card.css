@@ -1,0 +1,10 @@
+.card-body {
+    position: relative;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card-body.expanded {
+    max-height: none;
+}
